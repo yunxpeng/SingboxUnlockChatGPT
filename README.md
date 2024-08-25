@@ -3,12 +3,11 @@
 
 1. use singbox script to install Proxy
 
-   
    https://233boy.com/sing-box/sing-box-script/
-   
+
    bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
 
-optional: 
+optional:
    enable bbr
     ```
     echo net.core.default_qdisc=fq >> /etc/sysctl.conf 
