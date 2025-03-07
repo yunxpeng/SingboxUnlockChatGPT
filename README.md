@@ -15,9 +15,9 @@
    bash <(curl -fsSL git.io/warp.sh) d
 3. enable bbr
    ```
-   echo 'export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin' >> ~/.bashrc
-   source ~/.bashrc
-   echo net.core.default_qdisc=fq >> /etc/sysctl.conf
-   echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf  
-   sysctl -p  
-   lsmod | grep bbr
+   sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin' >> ~/.bashrc
+   sudo source ~/.bashrc
+   sudo echo net.core.default_qdisc=fq >> /etc/sysctl.conf
+   sudo echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf  
+   sudo sysctl -p  
+   sudo lsmod | grep bbr
