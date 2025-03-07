@@ -5,7 +5,10 @@
    https://233boy.com/sing-box/sing-box-script/
 
    ```
-   bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
+   wget https://github.com/233boy/sing-box/raw/main/install.sh
+   chmod +x install.sh
+   sudo ./install.sh
+   ```
 2. install cloudflare warp to unlock chatgpt
    https://p3terx.com/archives/cloudflare-warp-configuration-script.html
    ```
