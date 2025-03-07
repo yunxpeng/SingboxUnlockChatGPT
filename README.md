@@ -16,7 +16,7 @@
 3. enable bbr
    ```
    sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin' >> ~/.bashrc
-   sudo source ~/.bashrc
+   source ~/.bashrc
    sudo echo net.core.default_qdisc=fq >> /etc/sysctl.conf
    sudo echo net.ipv4.tcp_congestion_control=bbr >> /etc/sysctl.conf  
    sudo sysctl -p  
